@@ -3,3 +3,8 @@ print("Welcome to my Python program!")
 # Ask the user for input
 hours = input("How many hours did you study today? ")
 
+# Convert input to a number and calculate weekly estimate
+hours = float(hours)
+weekly_hours = hours * 7
+
+
