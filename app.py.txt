@@ -1,3 +1,6 @@
+# Simple Study Time Tracker
+# This program asks how many hours you studied today and estimates weekly study time.
+
 print("Welcome to my Python program!")
 
 # Ask the user for input
@@ -5,10 +8,10 @@ hours = input("How many hours did you study today? ")
 
 # Try to convert input to a number and calculate weekly estimate
 try:
-    hours = float(hours)
-    weekly_hours = hours * 7
+    hours = float(hours)           # convert input to float
+    weekly_hours = hours * 7       # estimate for 7 days
 except ValueError:
-    print("Please enter a valid number.")
+    print("Please enter a valid number.")  # error message for bad input
     exit()
 
 # Print the result clearly
